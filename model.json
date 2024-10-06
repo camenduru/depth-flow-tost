@@ -1,0 +1,17 @@
+{
+    "input_image": "https://files.catbox.moe/3n2kou.png",
+    "motion": "circle",
+    "intensity": 1.0,
+    "reverse": false,
+    "smooth": true,
+    "loop": true,
+    "depth": 0.5,
+    "phase": 0.0,
+    "phase_x": 0.0,
+    "phase_y": 0.0,
+    "phase_z": 0.0,
+    "amplitude_x": 1.0,
+    "amplitude_y": 1.0,
+    "amplitude_z": 0.0,
+    "static_value": 0.3
+}

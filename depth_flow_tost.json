@@ -1,0 +1,991 @@
+{
+  "last_node_id": 181,
+  "last_link_id": 214,
+  "nodes": [
+    {
+      "id": 177,
+      "type": "VHS_VideoCombine",
+      "pos": {
+        "0": 2140,
+        "1": -730
+      },
+      "size": [
+        418.5066833496094,
+        722.5066833496094
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 208
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 15,
+        "loop_count": 0,
+        "filename_prefix": "DepthFlow",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DepthFlow_00056.mp4",
+            "subfolder": "",
+            "type": "temp",
+            "format": "video/h264-mp4",
+            "frame_rate": 15
+          },
+          "muted": false
+        }
+      }
+    },
+    {
+      "id": 178,
+      "type": "Depthflow",
+      "pos": {
+        "0": 2200,
+        "1": 450
+      },
+      "size": {
+        "0": 315,
+        "1": 286
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 206
+        },
+        {
+          "name": "depth_map",
+          "type": "IMAGE",
+          "link": 209
+        },
+        {
+          "name": "motion",
+          "type": "DEPTHFLOW_MOTION",
+          "link": 207
+        },
+        {
+          "name": "effects",
+          "type": "DEPTHFLOW_EFFECTS",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            208
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Depthflow"
+      },
+      "widgets_values": [
+        1,
+        30,
+        30,
+        30,
+        50,
+        1,
+        0,
+        "mirror"
+      ]
+    },
+    {
+      "id": 142,
+      "type": "VHS_VideoCombine",
+      "pos": {
+        "0": 1720,
+        "1": -730
+      },
+      "size": [
+        418.5066833496094,
+        722.5066833496094
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 153
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 15,
+        "loop_count": 0,
+        "filename_prefix": "DepthFlow",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DepthFlow_00057.mp4",
+            "subfolder": "",
+            "type": "temp",
+            "format": "video/h264-mp4",
+            "frame_rate": 15
+          },
+          "muted": false
+        }
+      }
+    },
+    {
+      "id": 181,
+      "type": "Depthflow",
+      "pos": {
+        "0": 1333,
+        "1": 360
+      },
+      "size": {
+        "0": 315,
+        "1": 286
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 212
+        },
+        {
+          "name": "depth_map",
+          "type": "IMAGE",
+          "link": 213
+        },
+        {
+          "name": "motion",
+          "type": "DEPTHFLOW_MOTION",
+          "link": 211
+        },
+        {
+          "name": "effects",
+          "type": "DEPTHFLOW_EFFECTS",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            214
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Depthflow"
+      },
+      "widgets_values": [
+        1,
+        30,
+        30,
+        30,
+        50,
+        1,
+        0,
+        "mirror"
+      ]
+    },
+    {
+      "id": 180,
+      "type": "VHS_VideoCombine",
+      "pos": {
+        "0": 1303,
+        "1": -732
+      },
+      "size": [
+        418.5066833496094,
+        722.5066833496094
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 214
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 15,
+        "loop_count": 0,
+        "filename_prefix": "DepthFlow",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DepthFlow_00055.mp4",
+            "subfolder": "",
+            "type": "temp",
+            "format": "video/h264-mp4",
+            "frame_rate": 15
+          },
+          "muted": false
+        }
+      }
+    },
+    {
+      "id": 124,
+      "type": "LoadImage",
+      "pos": {
+        "0": 885,
+        "1": -513
+      },
+      "size": [
+        408.5298457225608,
+        495.15201722796036
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            135,
+            172,
+            201,
+            206,
+            212
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_00484_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 179,
+      "type": "DepthflowMotionPresetDolly",
+      "pos": {
+        "0": 1305,
+        "1": 54
+      },
+      "size": {
+        "0": 403.1999816894531,
+        "1": 250
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "feature",
+          "type": "FEATURE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "DEPTHFLOW_MOTION",
+          "type": "DEPTHFLOW_MOTION",
+          "links": [
+            211
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DepthflowMotionPresetDolly"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        "intensity",
+        "relative",
+        1,
+        false,
+        true,
+        true,
+        0.5
+      ]
+    },
+    {
+      "id": 176,
+      "type": "DepthflowMotionPresetZoom",
+      "pos": {
+        "0": 1729,
+        "1": 26
+      },
+      "size": {
+        "0": 390.5999755859375,
+        "1": 250
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "feature",
+          "type": "FEATURE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "DEPTHFLOW_MOTION",
+          "type": "DEPTHFLOW_MOTION",
+          "links": [
+            210
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DepthflowMotionPresetZoom"
+      },
+      "widgets_values": [
+        0.5,
+        0,
+        "intensity",
+        "relative",
+        1,
+        false,
+        true,
+        0,
+        false
+      ]
+    },
+    {
+      "id": 138,
+      "type": "DepthflowMotionPresetCircle",
+      "pos": {
+        "0": 2150,
+        "1": 40
+      },
+      "size": {
+        "0": 415.8000183105469,
+        "1": 370
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "feature",
+          "type": "FEATURE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "DEPTHFLOW_MOTION",
+          "type": "DEPTHFLOW_MOTION",
+          "links": [
+            207
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DepthflowMotionPresetCircle"
+      },
+      "widgets_values": [
+        1,
+        0,
+        "intensity",
+        "relative",
+        1,
+        false,
+        true,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0.3
+      ]
+    },
+    {
+      "id": 123,
+      "type": "Depthflow",
+      "pos": {
+        "0": 1779,
+        "1": 340
+      },
+      "size": {
+        "0": 315,
+        "1": 286
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 135
+        },
+        {
+          "name": "depth_map",
+          "type": "IMAGE",
+          "link": 204
+        },
+        {
+          "name": "motion",
+          "type": "DEPTHFLOW_MOTION",
+          "link": 210
+        },
+        {
+          "name": "effects",
+          "type": "DEPTHFLOW_EFFECTS",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            153
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Depthflow"
+      },
+      "widgets_values": [
+        0.75,
+        30,
+        30,
+        30,
+        50,
+        1,
+        0,
+        "mirror"
+      ]
+    },
+    {
+      "id": 172,
+      "type": "MetricDepthToInverse",
+      "pos": {
+        "0": 977,
+        "1": 262
+      },
+      "size": {
+        "0": 289.79998779296875,
+        "1": 26
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "depth",
+          "type": "IMAGE",
+          "link": 197
+        }
+      ],
+      "outputs": [
+        {
+          "name": "depth",
+          "type": "IMAGE",
+          "links": [
+            198,
+            204,
+            209,
+            213
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MetricDepthToInverse"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 174,
+      "type": "MetricDepthToRelative",
+      "pos": {
+        "0": 969,
+        "1": 338
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "depth",
+          "type": "IMAGE",
+          "link": 199
+        }
+      ],
+      "outputs": [
+        {
+          "name": "depth",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MetricDepthToRelative"
+      },
+      "widgets_values": [
+        true,
+        true,
+        1
+      ]
+    },
+    {
+      "id": 173,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1084,
+        "1": 490
+      },
+      "size": {
+        "0": 210,
+        "1": 246
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 198
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 171,
+      "type": "DepthPro",
+      "pos": {
+        "0": 912,
+        "1": 143
+      },
+      "size": {
+        "0": 355.20001220703125,
+        "1": 66
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "depth_pro_model",
+          "type": "DEPTH_PRO_MODEL",
+          "link": 196
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 201
+        }
+      ],
+      "outputs": [
+        {
+          "name": "metric_depth",
+          "type": "IMAGE",
+          "links": [
+            197,
+            199
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "focal_list",
+          "type": "LIST",
+          "links": null
+        },
+        {
+          "name": "focal_avg",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DepthPro"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 170,
+      "type": "LoadDepthPro",
+      "pos": {
+        "0": 935,
+        "1": 34
+      },
+      "size": {
+        "0": 327.5999755859375,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "depth_pro_model",
+          "type": "DEPTH_PRO_MODEL",
+          "links": [
+            196
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadDepthPro"
+      },
+      "widgets_values": [
+        "fp16"
+      ]
+    },
+    {
+      "id": 162,
+      "type": "DepthAnythingPreprocessor",
+      "pos": {
+        "0": 963,
+        "1": -649
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 172
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DepthAnythingPreprocessor"
+      },
+      "widgets_values": [
+        "depth_anything_vits14.pth",
+        1024
+      ]
+    }
+  ],
+  "links": [
+    [
+      135,
+      124,
+      0,
+      123,
+      0,
+      "IMAGE"
+    ],
+    [
+      153,
+      123,
+      0,
+      142,
+      0,
+      "IMAGE"
+    ],
+    [
+      172,
+      124,
+      0,
+      162,
+      0,
+      "IMAGE"
+    ],
+    [
+      196,
+      170,
+      0,
+      171,
+      0,
+      "DEPTH_PRO_MODEL"
+    ],
+    [
+      197,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ],
+    [
+      198,
+      172,
+      0,
+      173,
+      0,
+      "IMAGE"
+    ],
+    [
+      199,
+      171,
+      0,
+      174,
+      0,
+      "IMAGE"
+    ],
+    [
+      201,
+      124,
+      0,
+      171,
+      1,
+      "IMAGE"
+    ],
+    [
+      204,
+      172,
+      0,
+      123,
+      1,
+      "IMAGE"
+    ],
+    [
+      206,
+      124,
+      0,
+      178,
+      0,
+      "IMAGE"
+    ],
+    [
+      207,
+      138,
+      0,
+      178,
+      2,
+      "DEPTHFLOW_MOTION"
+    ],
+    [
+      208,
+      178,
+      0,
+      177,
+      0,
+      "IMAGE"
+    ],
+    [
+      209,
+      172,
+      0,
+      178,
+      1,
+      "IMAGE"
+    ],
+    [
+      210,
+      176,
+      0,
+      123,
+      2,
+      "DEPTHFLOW_MOTION"
+    ],
+    [
+      211,
+      179,
+      0,
+      181,
+      2,
+      "DEPTHFLOW_MOTION"
+    ],
+    [
+      212,
+      124,
+      0,
+      181,
+      0,
+      "IMAGE"
+    ],
+    [
+      213,
+      172,
+      0,
+      181,
+      1,
+      "IMAGE"
+    ],
+    [
+      214,
+      181,
+      0,
+      180,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Group",
+      "bounding": [
+        752,
+        -825,
+        1849,
+        1582
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9229599817706631,
+      "offset": [
+        -420.2226898833558,
+        771.7812415939437
+      ]
+    }
+  },
+  "version": 0.4
+}

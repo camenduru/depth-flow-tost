@@ -1,0 +1,241 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "DepthFlow",
+      "author": "BrokenSource, akatz-ai",
+      "code": "https://github.com/BrokenSource/DepthFlow",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/depth-flow.ipynb",
+      "tags": [
+        "Image to Video"
+      ],
+      "widget": "readme"
+    },
+    "upload": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "input_image"
+    },
+    "input_image": {
+      "type": "string",
+      "description": "Input Image URL",
+      "widget": "textarea"
+    },
+    "motion": {
+      "type": "string",
+      "widget": "select",
+      "description": "motion",
+      "oneOf": [
+        {
+          "description": "dolly",
+          "enum": [
+            "dolly"
+          ]
+        },
+        {
+          "description": "zoom",
+          "enum": [
+            "zoom"
+          ]
+        },
+        {
+          "description": "circle",
+          "enum": [
+            "circle"
+          ]
+        }
+      ],
+      "default": "circle"
+    },
+    "intensity": {
+        "type": "number",
+        "description": "Intensity",
+        "minimum": 0.1,
+        "maximum": 1.0,
+        "widget": "select",
+        "oneOf": [
+          {
+            "description": "0.1",
+            "enum": [
+              0.5
+            ]
+          },
+          {
+            "description": "0.15",
+            "enum": [
+              0.55
+            ]
+          },
+          {
+            "description": "0.2",
+            "enum": [
+              0.5
+            ]
+          },
+          {
+            "description": "0.25",
+            "enum": [
+              0.55
+            ]
+          },
+          {
+            "description": "0.3",
+            "enum": [
+              0.5
+            ]
+          },
+          {
+            "description": "0.35",
+            "enum": [
+              0.55
+            ]
+          },
+          {
+            "description": "0.4",
+            "enum": [
+              0.5
+            ]
+          },
+          {
+            "description": "0.45",
+            "enum": [
+              0.55
+            ]
+          },
+          {
+            "description": "0.5",
+            "enum": [
+              0.5
+            ]
+          },
+          {
+            "description": "0.55",
+            "enum": [
+              0.55
+            ]
+          },
+          {
+            "description": "0.6",
+            "enum": [
+              0.6
+            ]
+          },
+          {
+            "description": "0.65",
+            "enum": [
+              0.65
+            ]
+          },
+          {
+            "description": "0.7",
+            "enum": [
+              0.7
+            ]
+          },
+          {
+            "description": "0.75",
+            "enum": [
+              0.75
+            ]
+          },
+          {
+            "description": "0.8",
+            "enum": [
+              0.8
+            ]
+          },
+          {
+            "description": "0.85",
+            "enum": [
+              0.85
+            ]
+          },
+          {
+            "description": "0.9",
+            "enum": [
+              0.9
+            ]
+          },
+          {
+            "description": "0.95",
+            "enum": [
+              0.95
+            ]
+          },
+          {
+            "description": "1.0",
+            "enum": [
+              1.0
+            ]
+          }
+        ],
+        "default": 0.65
+    },
+    "reverse": {
+      "type": "boolean",
+      "description": "Reverse"
+    },
+    "smooth": {
+      "type": "boolean",
+      "description": "Smooth"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "Loop"
+    },
+    "depth": {
+      "type": "number",
+      "description": "depth"
+    },
+    "phase": {
+      "type": "number",
+      "description": "phase"
+    },
+    "phase_x": {
+      "type": "number",
+      "description": "phase_x"
+    },
+    "phase_y": {
+      "type": "number",
+      "description": "phase_y"
+    },
+    "phase_z": {
+      "type": "number",
+      "description": "phase_z"
+    },
+    "amplitude_x": {
+      "type": "number",
+      "description": "amplitude_x"
+    },
+    "amplitude_y": {
+      "type": "number",
+      "description": "amplitude_y"
+    },
+    "amplitude_z": {
+      "type": "number",
+      "description": "amplitude_z"
+    },
+    "static_value": {
+      "type": "number",
+      "description": "static_value"
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://files.catbox.moe/3n2kou.png",
+      "image2": "https://files.catbox.moe/3as2dp.mp4",
+      "image3": "https://files.catbox.moe/gzplqs.mp4",
+      "image4": "https://files.catbox.moe/j0tsfy.mp4",
+      "video_aspect_ratio": "100%",
+      "widget": "example"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}
