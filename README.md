@@ -12,7 +12,7 @@ https://github.com/spacepxl/ComfyUI-Depth-Pro <br />
 
 ### 🖼 Output
 
-
+https://github.com/user-attachments/assets/aebe98db-0c2f-4b3c-bf8d-525c4b4ab864
 
 ### 🏢 Sponsor
 https://runpod.io
