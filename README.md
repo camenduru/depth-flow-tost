@@ -17,4 +17,4 @@ https://github.com/spacepxl/ComfyUI-Depth-Pro <br />
 https://github.com/user-attachments/assets/aebe98db-0c2f-4b3c-bf8d-525c4b4ab864
 
 ### 🏢 Sponsor
-https://runpod.io
+[https://runpod.io](https://runpod.io?ref=iqi9iy8y)
